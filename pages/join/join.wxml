@@ -1,0 +1,20 @@
+<!--pages/join/join.wxml-->
+<image class='banner' src='/images/1.jpg'></image>
+ <view class='block'>
+  <view class='block-title'>关于我们</view>
+  <text class='block-desc'>两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯</text>
+</view> 
+
+ <view class='block'>
+  <view class='block-title'>关于我们</view>
+  <text class='block-desc'>两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯</text>
+</view> 
+
+ <view class='block'>
+  <view class='block-title'>关于我们</view>
+  <text class='block-desc'>两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯两点开始大发牢骚淡粉色礼服大连市封疆大吏分来的反倒是费德勒舒服大连市风急浪大司法拘留的费拉达斯</text>
+</view> 
+
+<view class='footer'>
+  <button bindtap='tell'>电话质询</button>
+</view>
