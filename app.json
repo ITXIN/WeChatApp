@@ -9,7 +9,10 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance":50
+
   },
   "tabBar": {
     "selectedColor": "#0f0f0f",
@@ -25,6 +28,13 @@
       "iconPath": "images/ic_home_normal.png",
       "selectedIconPath": "images/ic_home_pressed.png"
     }]
-  }
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
 
 }

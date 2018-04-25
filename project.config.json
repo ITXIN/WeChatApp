@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.0",
 	"appid": "wxb12f1daf89e8d87f",
-	"projectname": "WeChartApps",
+	"projectname": "wechatapp",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

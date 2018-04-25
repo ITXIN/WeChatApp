@@ -15,6 +15,9 @@ Page({
   console.log(options);
   var title = wx.getStorageSync('title')
   console.log(title);
+  wx.showToast({
+    title: title,
+  })
   },
 
   /**
