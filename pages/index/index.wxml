@@ -7,6 +7,34 @@
     </swiper-item>
   </block>
 </swiper>
+
+<wxs src="./pages/common/comm.wxs" module="tools" />
+<!-- <wxs src="index.wxs" module="tools" /> -->
+ <!-- <view> {{tools.msg}}</view>
+<view> {{tools.bar(tools.foo)}}</view>  -->
+
+<wxs module="m1">
+var msg = "你好 hello world";
+
+module.exports.message = msg;
+</wxs>
+
+<view> {{m1.message}} </view>
+
+
+
+
+
+
+<view id="outer" bindtap='handleTap1'>outer view
+  <view id="middle" catchtap='handleTap2'>middle view
+  <view id="inner" bindtap='handleTap3'>inner view
+</view>
+</view>
+</view>
+
+<view id='tapTest' data-hi="wechat" bindtap='tapName'>Click me!</view>
+
 <view wx:if="{{view=='web'}}">web</view>
 <view wx:elif="{{view=='app'}}">app</view>
 <view wx:else="{{view=='Mina'}}">Mina</view>
@@ -19,6 +47,63 @@
 <template is="staffName" data="{{...staffA}}"></template>
 <template is="staffName" data="{{...staffB}}"></template>
 <template is="staffName" data="{{...staffC}}"></template>
+
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+
+<!-- <block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block> -->
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>
+
+<view wx:for="array">
+  {{item}}
+</view>
+
+
+<view wx:if="{{condition}}">Ture</view>
+
+<block wx:if="{{true}}">
+  <view> view1 </view>
+  <view> view2 </view>
+</block>
+
+<template name="msgItem">
+  <view>
+    <text>{{index}}:{{msg}}</text>
+    <text>Time:{{time}}</text>
+  </view>
+  </template>
+
+<template is="msgItem" data="{{...item}}"/>
+
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>
+
+
 
 
 

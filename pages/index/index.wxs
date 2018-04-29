@@ -1,0 +1,13 @@
+var comms  = require('./common/comm.wxs');
+console.log(comms.commTest);
+
+var foo = comms.commTest;
+
+var bar = function(d){
+  return d;
+}
+module.exports = {
+  foo:foo,
+  bar:bar
+};
+module.exports.msg = "some msg";

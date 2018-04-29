@@ -1,0 +1,4 @@
+var commTest = "common test";
+module.exports = {
+  commTest: commTest,
+};
